@@ -4,8 +4,8 @@ import { StrictMode } from "react";
 import { Home } from "./Components/Home";
 import LoginForm from "./Components/LoginForm";
 
-import TextForm from "./Components/TextForm";
-import Todo from "./Components/Todo";
+// import TextForm from "./Components/TextForm";
+// import Todo from "./Components/Todo";
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
         <Home title="TextUtils" AboutText="About Us" />
 
         <div className="container my-3">
-          <TextForm heading="Enter the text to analyze" />
+          {/* <TextForm heading="Enter the text to analyze" /> */}
 
-          <Todo />
+          {/* <Todo /> */}
           {/* <BesicForm/>   */}
         </div>
         {/* <Fetch /> */}

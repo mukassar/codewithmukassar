@@ -2,28 +2,35 @@ import React from "react";
 
 const LoginForm = () => {
   return (
-    <div>
+    <div style={{ marginLeft: "2rem" }}>
       <h1>LOGIN FORM</h1>
-      <div class="data">
-        <label>Email or Phone</label>
-        <input type="text" />
-        <label>Password</label>
-        <input type="password" />
-        <input type="password" />
-        <div class="forgot-pass">
-          <a href="#">Forgot Password?</a>
+      <form style={{ maxWidth: "50%" }}>
+        <div className="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            className="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+          <small id="emailHelp" className="form-text text-muted">
+            We'll never share your email with anyone else.
+          </small>
         </div>
-        <div>
-          <button
-            style={{ bgColor: "black" }}
-            className="btn btn-primary"
-            type="Submit"
-          >
-            {" "}
-            Login{" "}
-          </button>
+        <div className="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            className="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+          />
         </div>
-      </div>
+        <button type="submit" className="btn btn-primary">
+          Submit
+        </button>
+      </form>
     </div>
   );
 };
