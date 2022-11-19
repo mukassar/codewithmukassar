@@ -9,7 +9,6 @@ const LoginForm = () => {
         <input type="text" />
         <label>Password</label>
         <input type="password" />
-        <input type="password" />
         <div class="forgot-pass">
           <a href="#">Forgot Password?</a>
         </div>
