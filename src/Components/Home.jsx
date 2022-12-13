@@ -42,6 +42,9 @@ export const Home = (props) => {
               <button className="btn btn-outline-success" type="submit">
                 Search
               </button>
+              <button className="btn btn-outline-success" type="OK">
+                Search
+              </button>
             </form>
           </div>
         </div>
