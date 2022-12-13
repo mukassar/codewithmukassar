@@ -3,6 +3,7 @@ import { StrictMode } from "react";
 // import BesicForm from './Components/BasicForm';
 import { Home } from "./Components/Home";
 import LoginForm from "./Components/LoginForm";
+import CentralLoginForm from "./Components/Mukassar/CentralLoginForm";
 
 // import TextForm from "./Components/TextForm";
 // import Todo from "./Components/Todo";
@@ -21,6 +22,7 @@ function App() {
         </div>
         {/* <Fetch /> */}
         <LoginForm />
+        <CentralLoginForm/>
       </StrictMode>
     </>
   );

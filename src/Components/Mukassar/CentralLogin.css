@@ -1,0 +1,14 @@
+.mainDiv{
+    align-content: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    /* position: relative; */
+}
+.loginForm{
+    width: 65vh;
+}
