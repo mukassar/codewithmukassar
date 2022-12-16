@@ -10,6 +10,7 @@ import CentralLoginForm from "./Components/Mukassar/CentralLoginForm";
 import RegisterForm from "./Components/Sadik/RegisterForm";
 // import RegisterForm from "./Components/Mukassar/RegisterForm";
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Fetching1 from "./Components/Sadik/MultipalApiFetch.jsx/Fetching1";
 
 function App() {
   return (
@@ -22,13 +23,14 @@ function App() {
           {/* <BesicForm/>   */}
         </div>
         {/* <Fetch /> */}
-          <BrowserRouter>
+          {/* <BrowserRouter>
            <Routes>
              <Route path="/ragister" element={<RegisterForm/>}/>
              <Route path="/" element={<CentralLoginForm/>}/>
            </Routes>
-         </BrowserRouter>
+         </BrowserRouter> */}
         {/* <LoginForm /> */}
+        <Fetching1/>
       </StrictMode>
     </>
   );
