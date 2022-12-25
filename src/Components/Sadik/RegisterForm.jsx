@@ -1,4 +1,5 @@
 import React from 'react';
+import CarsList from '../CarsList';
 
 const RegisterForm = () => {
     return (
@@ -19,6 +20,7 @@ const RegisterForm = () => {
               <input className='form-control' type="password" placeholder='Enter Conform Password' required  />
               <button className='btn btn-primary' style={{marginTop: "5px"}} type='submit' >Submit</button>
             </form>
+            <CarsList/>
         </div>
     );
 };

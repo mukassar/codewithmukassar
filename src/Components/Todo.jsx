@@ -15,6 +15,10 @@ const Todo = () => {
     })
     setInputList("");
   };
+  const handleDelete = (ind) => {
+    const filtered = items.filter((a, b) => b !== ind )
+    setItems(filtered);
+  }
   return (
     <div className="main_div">
       <div className="center_div">
@@ -23,10 +27,10 @@ const Todo = () => {
         <br />
         <input type="text" placeholder="Add Items" onChange={handleChange} value={inputList} />
         <button className="add_input" onClick={itemList}>+</button>
+          <button onClick={handleDelete}>Delete</button>
         <ol>
-          {items.map((itemData)=>{
+          {items.map((itemData, ind)=>{
             return <li>{itemData}</li>
-
           })}
         </ol>
       </div>
